@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { getSortedPostsData } from '../lib/posts'
+
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({allPostsData}) {
   return (
     <>
       <Head>
@@ -117,7 +119,33 @@ export default function Home() {
             </p>
           </a>
         </div>
+        {/* Add this <section> tag below the existing <section> tag */}
+      <section>
+        <h2>Blog</h2>
+        <ul >
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
+      </section>
       </main>
     </>
   )
+}
+
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  console.log(allPostsData)
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }
