@@ -30,7 +30,7 @@ export default function Home({allPostsData}) {
                   <Link href={`/posts/${encodeURIComponent(id)}`}>{title}</Link>
                 </h3>
                 <small>
-                  {new Date(date).toLocaleDateString()}
+                  {new Date(date).toLocaleDateString("zh-CN")}
                 </small>
                 <p>
                   {spoiler}
