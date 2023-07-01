@@ -12,6 +12,16 @@
   max-width:62rem;
   padding:2.625rem 1.3125rem
 }
+
+.article h2 {
+  margin-bottom: 1.75rem;
+  color: inherit;
+  font-family: 'Merriweather','Georgia',serif;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+  font-size: 1.73286rem;
+  line-height: 1.1;
+}
 .posts {
   list-style: none;
 }
@@ -52,6 +62,19 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.article .date {
+  font-size: 0.83255rem; line-height: 1.75rem; display: block; margin-bottom: 1.75rem; 
 }
 
 .code {

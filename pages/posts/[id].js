@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
+import styles from '../../styles/Home.module.css'
 
 export default function Post({ postData }) {
     return (
@@ -8,15 +8,17 @@ export default function Post({ postData }) {
         <Head>
           <title>{postData.title}</title>
         </Head>
-        <div>
-          {postData.title}
-          <br />
-          {postData.id}
-          <br />
-          <Date dateString={postData.date} />
-          <br/>
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        </div>
+        <main className={styles.main}>
+          <article className={styles.article}>
+            <header>
+              <h1>{postData.title}</h1>
+              <p className={styles.date}>
+               {new Date(postData.date).toLocaleDateString("zh-CN")}
+              </p>
+            </header>
+            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          </article>
+        </main>
       </>
     );
   }
