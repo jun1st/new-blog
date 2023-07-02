@@ -14,7 +14,7 @@ export default function Home({allPostsData}) {
   return (
     <>
       <Head>
-        <title>fengd's personal zone</title>
+        <title>fengd&apos;s personal zone</title>
         <meta name="description" content="fengde's personal blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
