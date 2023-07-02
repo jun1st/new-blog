@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import styles from '../../styles/Home.module.css'
+import Header from '../../components/header'
 
 export default function Post({ postData }) {
     return (
@@ -8,7 +9,9 @@ export default function Post({ postData }) {
         <Head>
           <title>{postData.title}</title>
         </Head>
+        
         <main className={styles.main}>
+          <Header></Header>
           <article className={styles.article}>
             <header>
               <h1>{postData.title}</h1>
