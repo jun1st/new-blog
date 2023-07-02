@@ -6,9 +6,8 @@ spoiler: Bali trip pictures share
 
 # Bali Trip 
 
-/static/DJI_0105.jpeg
 ##
-![alt](/images/posts/2023-06-27-bali-trip/DJI_0108.jpeg)
+![alt](./DJI_0108.jpeg)
 ##
 ![alt](./DJI_0117.jpeg)
 ##
