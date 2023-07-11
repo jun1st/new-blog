@@ -6,6 +6,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/header'
+import Analytics from '../components/analytics'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -40,6 +41,7 @@ export default function Home({allPostsData}) {
             ))}
           </ul>
         </article>
+        <Analytics></Analytics>
       </main>
     </>
   )

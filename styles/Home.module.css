@@ -22,6 +22,12 @@
   font-size: 1.73286rem;
   line-height: 1.1;
 }
+
+.article h2.comments {
+  border-bottom: #cccccc 1px solid;
+  padding-bottom: 10px;
+}
+
 .posts {
   list-style: none;
 }

@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header'
 import Comments from '../../components/comment';
+import Analytics from '../../components/analytics';
 
 export default function Post({ postData }) {
     return (
@@ -21,8 +22,10 @@ export default function Post({ postData }) {
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <h2 className={styles.comments}>Comments</h2>
             <Comments />
           </article>
+          <Analytics></Analytics>
         </main>
       </>
     );
