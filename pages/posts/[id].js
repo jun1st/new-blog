@@ -4,7 +4,7 @@ import styles from '../../styles/Home.module.css'
 import Header from '../../components/header'
 import Comments from '../../components/comment';
 import GoogleAnalytics from '../../components/google-analytics';
-import { Analytics } from '@vercel/analytics'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function Post({ postData }) {
     return (

@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/header'
 import GoogleAnalytics from '../components/google-analytics'
-import { Analytics } from '@vercel/analytics'
+import { Analytics } from '@vercel/analytics/react'
 
 
 const inter = Inter({ subsets: ['latin'] })
