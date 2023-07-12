@@ -1,7 +1,7 @@
 
 import Script from 'next/script'
 
-function Analytics() {
+function GoogleAnalytics() {
     return (
       <div className="container">
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-Z1J88QGVFK" />
@@ -18,4 +18,4 @@ function Analytics() {
     )
   }
    
-  export default Analytics
+  export default GoogleAnalytics

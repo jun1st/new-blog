@@ -3,7 +3,8 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header'
 import Comments from '../../components/comment';
-import Analytics from '../../components/analytics';
+import GoogleAnalytics from '../../components/google-analytics';
+import { Analytics } from '@vercel/analytics'
 
 export default function Post({ postData }) {
     return (
@@ -25,6 +26,7 @@ export default function Post({ postData }) {
             <h2 className={styles.comments}>Comments</h2>
             <Comments />
           </article>
+          <GoogleAnalytics></GoogleAnalytics>
           <Analytics></Analytics>
         </main>
       </>

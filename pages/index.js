@@ -6,7 +6,8 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/header'
-import Analytics from '../components/analytics'
+import GoogleAnalytics from '../components/google-analytics'
+import { Analytics } from '@vercel/analytics'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -41,6 +42,7 @@ export default function Home({allPostsData}) {
             ))}
           </ul>
         </article>
+        <GoogleAnalytics></GoogleAnalytics>
         <Analytics></Analytics>
       </main>
     </>
