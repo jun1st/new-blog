@@ -16,7 +16,7 @@ const AdBanner = (props) => {
         display: 'block',
         overflow: 'hidden',
       }}
-      data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}
+      data-ad-client="ca-pub-0114708860946019"
       {...props}
     />
   );

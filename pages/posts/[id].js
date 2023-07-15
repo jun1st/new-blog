@@ -6,6 +6,7 @@ import Comments from '../../components/comment';
 import GoogleAnalytics from '../../components/google-analytics';
 import { Analytics } from '@vercel/analytics/react'
 import Script from 'next/script';
+import AdBanner from '../../components/adBanner';
 
 export default function Post({ postData }) {
     return (
@@ -29,6 +30,11 @@ export default function Post({ postData }) {
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <AdBanner
+              data-ad-slot="1641482906"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></AdBanner>
             <h2 className={styles.comments}>Comments</h2>
             <Comments />
           </article>
