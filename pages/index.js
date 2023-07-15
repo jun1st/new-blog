@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Script from 'next/script';
 import { getSortedPostsData } from '../lib/posts'
 
 import { Inter } from '@next/font/google'
@@ -20,9 +20,17 @@ export default function Home({allPostsData}) {
         <meta name="description" content="fengde's personal blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        
       </Head>
       <main className={styles.main}>
-        <Header></Header>
+        <Header>
+          <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0114708860946019`}
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
+        </Header>
         {/* Add this <section> tag below the existing <section> tag */}
         <h1>Recent posts</h1>
         <article className={styles.article}>

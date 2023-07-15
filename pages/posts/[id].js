@@ -5,6 +5,7 @@ import Header from '../../components/header'
 import Comments from '../../components/comment';
 import GoogleAnalytics from '../../components/google-analytics';
 import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script';
 
 export default function Post({ postData }) {
     return (
@@ -14,7 +15,14 @@ export default function Post({ postData }) {
         </Head>
         
         <main className={styles.main}>
-          <Header></Header>
+        <Header>
+          <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0114708860946019`}
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
+        </Header>
           <article className={styles.article}>
             <header>
               <h1>{postData.title}</h1>
