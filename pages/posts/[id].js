@@ -15,14 +15,12 @@ export default function Post({ postData }) {
         </Head>
         
         <main className={styles.main}>
-        <Header>
           <Script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0114708860946019`}
           strategy="lazyOnload"
           crossOrigin="anonymous"
         />
-        </Header>
           <article className={styles.article}>
             <header>
               <h1>{postData.title}</h1>
