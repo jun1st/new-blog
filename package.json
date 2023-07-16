@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "copyimages": "node ./lib/copyImages.mjs",
-    "prebuild": "npm run copyimages && npm run rss"
+    "prebuild": "npm run copyimages"
   },
   "dependencies": {
     "@next/font": "13.1.1",
