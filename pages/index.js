@@ -22,10 +22,6 @@ export default function Home({allPostsData}) {
         
       </Head>
       <main className={styles.main}>
-          <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0114708860946019"
-          crossOrigin="anonymous"
-        />
         {/* Add this <section> tag below the existing <section> tag */}
         <h1>Recent posts</h1>
         <article className={styles.article}>
