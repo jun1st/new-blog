@@ -5,7 +5,6 @@ import { getSortedPostsData } from '../lib/posts'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Header from '../components/header'
 import GoogleAnalytics from '../components/google-analytics'
 import { Analytics } from '@vercel/analytics/react'
 

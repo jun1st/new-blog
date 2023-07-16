@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import styles from '../../styles/Home.module.css'
-import Header from '../../components/header'
 import Comments from '../../components/comment';
 import GoogleAnalytics from '../../components/google-analytics';
 import { Analytics } from '@vercel/analytics/react'
