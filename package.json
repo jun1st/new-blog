@@ -2,8 +2,10 @@
   "name": "new-blog",
   "version": "0.1.0",
   "private": true,
+  "type":"module",
   "scripts": {
     "dev": "next dev",
+    "rss": "node ./lib/genRss.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
