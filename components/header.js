@@ -1,13 +1,22 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-
-
-export default function Header() {
+const Navbar = () => {
     return (
-        <header>
-            <h1 style={{marginTop: 0}}>
-                <Link href="/">fengd&apos;s personal zone</Link>
-            </h1>
-        </header> 
-    )
-}
+      <nav>
+        <ul className='nav'>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="https://running.fengqijun.me">Running</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          {/* Add more menu items as needed */}
+        </ul>
+      </nav>
+    );
+  };
+  
+  export default Navbar;     

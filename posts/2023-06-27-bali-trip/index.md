@@ -3,9 +3,6 @@ title: 'Bali Trip '
 date: '2023-06-27'
 spoiler: Bali trip pictures share
 ---
-
-# Bali Trip 
-
 ##
 ![alt](./DJI_0108.jpeg)
 ##

@@ -1,15 +1,12 @@
 import Head from 'next/head'
-import Script from 'next/script';
 import { getSortedPostsData } from '../lib/posts'
 
-import { Inter } from '@next/font/google'
+import Navbar from '../components/header'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import GoogleAnalytics from '../components/google-analytics'
 import { Analytics } from '@vercel/analytics/react'
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({allPostsData}) {
   return (
@@ -22,6 +19,7 @@ export default function Home({allPostsData}) {
         
       </Head>
       <main className={styles.main}>
+        <Navbar></Navbar>
         {/* Add this <section> tag below the existing <section> tag */}
         <h1>Recent posts</h1>
         <article className={styles.article}>

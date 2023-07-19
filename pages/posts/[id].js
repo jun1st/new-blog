@@ -1,10 +1,10 @@
 import Head from 'next/head';
+import Navbar from '../../components/header';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import styles from '../../styles/Home.module.css'
 import Comments from '../../components/comment';
 import GoogleAnalytics from '../../components/google-analytics';
 import { Analytics } from '@vercel/analytics/react'
-import Script from 'next/script';
 import AdBanner from '../../components/ad-banner';
 
 export default function Post({ postData }) {
@@ -15,7 +15,7 @@ export default function Post({ postData }) {
         </Head>
         
         <main className={styles.main}>
-         
+          <Navbar></Navbar>
           <article className={styles.article}>
             <header>
               <h1>{postData.title}</h1>
