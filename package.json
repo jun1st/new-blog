@@ -2,6 +2,7 @@
   "name": "new-blog",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "rss": "node ./lib/genRss.mjs",
@@ -9,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "copyimages": "node ./lib/copyImages.mjs",
-    "prebuild": "npm run copyimages"
+    "prebuild": "npm run copyimages && npm run rss"
   },
   "dependencies": {
     "@next/font": "13.1.1",
