@@ -16,7 +16,7 @@ export default function Home({allPostsData}) {
         <meta name="description" content="fengde's personal blog" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        
+        <link rel="canonical" href="https://blog.fengqijun.me" />
       </Head>
       <main className={styles.main}>
         <Navbar></Navbar>

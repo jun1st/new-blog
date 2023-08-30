@@ -7,11 +7,12 @@ import GoogleAnalytics from '../../components/google-analytics';
 import { Analytics } from '@vercel/analytics/react'
 import AdBanner from '../../components/ad-banner';
 
-export default function Post({ postData }) {
+export default function Post({ postData, id }) {
     return (
       <>
         <Head>
           <title>{postData.title}</title>
+          <link rel="canonical" href={"https://blog.fengqijun.me/posts/"  + id} />
         </Head>
         
         <main className={styles.main}>
@@ -44,6 +45,7 @@ export async function getStaticProps({ params }) {
     return {
       props: {
         postData,
+        id: params.id
       },
     };
   }
