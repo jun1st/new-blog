@@ -12,6 +12,7 @@ export default function Post({ postData, id }) {
       <>
         <Head>
           <title>{postData.title}</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
           <link rel="canonical" href={"https://blog.fengqijun.me/posts/"  + id} />
         </Head>
         
