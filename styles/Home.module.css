@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
   min-height: 100vh;
 }
 .article {
@@ -14,14 +13,16 @@
 }
 
 .article h2 {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
   color: inherit;
   font-family: 'Merriweather','Georgia',serif;
   font-weight: 900;
   text-rendering: optimizeLegibility;
   font-size: 1.73286rem;
   line-height: 1.1;
+  margin-top: 1rem;
 }
+
 
 .article h2.comments {
   border-bottom: #cccccc 1px solid;
@@ -80,7 +81,7 @@
 }
 
 .article .date {
-  font-size: 0.83255rem; line-height: 1.75rem; display: block; margin-bottom: 1.75rem; 
+  font-size: 0.83255rem; line-height: 1.75rem; display: block; 
 }
 
 .code {
