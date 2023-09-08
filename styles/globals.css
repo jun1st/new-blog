@@ -191,6 +191,10 @@ ul.nav {
   margin: 0 15px;
 }
 
+.nav li.first {
+  margin-left: 0;
+}
+
 .nav a {
   text-decoration: none;
   font-size: 18px;
@@ -221,7 +225,7 @@ a:hover {
    -moz-tab-size: 2;
    -o-tab-size: 2;
    tab-size: 2;
- 
+  font-size: 0.85rem !important;
    -webkit-hyphens: none;
    -moz-hyphens: none;
    -ms-hyphens: none;
@@ -343,9 +347,9 @@ a:hover {
  }
  
  .remark-highlight {
-   margin-bottom: 1.75rem;
-   margin-left: -1.3125rem;
-   margin-right: -1.3125rem;
+   margin: 1.75rem 0;
+   /* margin-left: -1.3125rem;
+   margin-right: -1.3125rem; */
    border-radius: 10px;
    background: #011627;
    -webkit-overflow-scrolling: touch;

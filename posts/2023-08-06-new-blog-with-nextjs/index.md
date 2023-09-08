@@ -8,7 +8,7 @@ spoiler: rewrite my blog with nextjs, statc site generate
 原先的 blog 是从 react 大神 https://overreacted.io/ 那里 fork 过来的。 大神已经不写 blog 了，代码也已经都老了，想要升级改个东西，各种不兼容。所以决定重写一个，顺便学习一下 nextjs。
 
 ## NextJS
-为什么用 NextJS， 因为 Vercel 的很好用，NextJS 正是 Vercel 出品的。 参考 NextJS 的![官方文档](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation)， 已经静态站点很快就生成了。
+为什么用 NextJS， 因为 Vercel 的很好用，NextJS 正是 Vercel 出品的。 参考 NextJS 的 [官方文档](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation)， 已经静态站点很快就生成了。
 
 ## markdown 文件/文件夹
 官方教程里的文章是一个 markdown 文件一篇文章。 这个处理起来简单，但是使用的时候不太方便，尤其是涉及图片的时候，需要给每个图片找到图床，然后在文章里直接使用 url。  https://overreacted.io/ 使用文件夹作为基础，一篇文章一个文件夹，图片可以直接放在文件夹内，使用方便。

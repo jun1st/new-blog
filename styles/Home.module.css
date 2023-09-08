@@ -18,7 +18,7 @@
   font-family: 'Merriweather','Georgia',serif;
   font-weight: 900;
   text-rendering: optimizeLegibility;
-  font-size: 1.73286rem;
+  font-size: 1.2rem;
   line-height: 1.1;
   margin-top: 1rem;
 }
@@ -33,6 +33,10 @@
   list-style: none;
 }
 
+.posts li {
+  margin-top: 3rem;
+}
+
 
 .posts h3 {
   color: var(--textLink);
@@ -41,7 +45,7 @@
   font-family: 'Merriweather','Georgia',serif;
   font-weight: 900;
   text-rendering: optimizeLegibility;
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   line-height: 1.1;
 }
 .description {
